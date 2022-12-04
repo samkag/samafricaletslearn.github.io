@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https:/pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="split.css">
+	<title>Register and login</title>
+</head>
+<body>
+	<div class="split-screen">
+		<div class="left">
+			<section class="copy">
+				<h1>Africa Let's Learn</h1>
+				<h2>Explore your creativity</h2>
+				<p>Over a 1000 courses taught</p>
+			</section>
+		</div>
+		<div class="right">
+			<form action="connect.php" method="POST">
+				<section class="copy">
+					<h2>Sign Up</h2>
+					<div class="login-container">
+						<p>Already have an account<a href="studentlogin.html"> <strong>Log in</strong> </a></p>
+					</div>
+				</section>
+				<div class="input-container name">
+					<label for="fname">School Name</label>
+					<input id="fname" name="schoolName" type="text">
+				</div>
+				<div class="input-container name">
+					<label for="fname">StudstudentLevelent's Level</label>
+					<input id="fname" name="" type="text">
+				</div>
+
+				<div class="input-container email">
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email">
+				</div>
+				<div class="input-container password">
+					<label for="password">Password</label>
+					<input id="password" name="password" type="password" placeholder="Must be at least 6 characters">
+					<i class="far fa-eye-slash"></i>
+				</div>	
+				<div class="input-container cta">
+					<label class="checkbox-container">
+						<input type="checkbox">
+						<span class="checkmark"></span>
+						Sign up for email updates
+					</label>
+				</div>
+				<button class="signup-btn" type="submit">Sign Up</button>
+				<section class="copy legal">
+					<p> <span class="small">By continuing you accept our terms <br> <a href="#">Privacy Policy</a> &amp; <a href="#">Terms of service</a>. </span> </p>
+				</section>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

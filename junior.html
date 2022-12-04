@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Africa Lets Learn Lessons</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https:/pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--Navigation-->
+    <nav>
+      <img src="images/newlogo.PNG" alt="">
+      <div class="Navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="active" href="course.html">Lessons</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="">
+      </div>
+    </nav>
+
+    <!--Home-->
+
+    <section id="about-us">
+      <h2>Enroll to Africa Let's Learn Lessons</h2>
+
+    </section>
+
+    <section id="course-inner">
+      <div class="over-view">
+        <img class="course-img" src="images/Comps.webp" alt="">
+        <div class="course-head">
+          <div class="course-name">
+            <h2>Introduction to HMTL and CSS for begginers</h2>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>HTML and CSS are the basic languages used in development of Web based applications.</p>
+          </div>
+          <span>Best for all</span>
+        </div>
+        <h3>Instructor</h3>
+        <div class="tutor">
+          <img src="images/c4.jpg" alt="">
+          <div class="tutor-details">
+            <h5>Samuel K.M</h5>
+            <p>Web Developer At PLP, Google, Amazon</p>
+          </div>
+        </div>
+        <hr>
+        <h3>Lesson overview</h3>
+        <p>HTML (the Hypertext Markup Language) and CSS
+          (Cascading Style Sheets) are two of the core
+          technologies for building Web pages. HTML provides
+          the structure of the page, CSS the (visual and aural)
+          layout, for a variety of devices. Along with graphics and scripting,
+          HTML and CSS are the basis of building Web pages and Web Applications.</p>
+          <hr>
+          <h3>What you will learn</h3>
+          <div class="learn">
+            <p><i class="far fa-check-circle"></i>What is HTML</p>
+            <p><i class="far fa-check-circle"></i>What is CSS</p>
+            <p><i class="far fa-check-circle"></i>Difference between HTML and CSS</p>
+            <p><i class="far fa-check-circle"></i>HTML Tags</p>
+            <p><i class="far fa-check-circle"></i>HTML attributes</p>
+            <p><i class="far fa-check-circle"></i>CSS syntaxs</p>
+            <p><i class="far fa-check-circle"></i>CSS attributes</p>
+            <p><i class="far fa-check-circle"></i>Creating Simple websites using HTML and CSS</p>
+          </div>
+      </div>
+      <div class="enroll">
+        <h3>Lesson details;</h3>
+        <p><i class="far fa-video"></i>20 Minutes videos</p>
+        <p><i class="far fa-newspaper"></i>Reading articles</p>
+        <p><i class="far fa-cloud-download"></i>Downloads</p>
+        <p><i class="far fa-infinity"></i>Full time access</p>
+        <p><i class="far fa-mobile-alt"></i>Access on mobile and Tv</p>
+        <p><i class="far fa-paperclip"></i>Assignments</p>
+        <p><i class="far fa-trophy-alt"></i>Certificate of completion</p>
+        <div class="enroll-btn">
+          <a  class="blue" href="#" title="">Lesson Not Ready</a>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <footer>
+      <div class="footer-col">
+        <h3>Africa Let's Learn</h3>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a class="active" href="about.html">About us</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
+        <li><a class="active" href="course.html">Courses</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </div>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>E-Learning</li>
+        <li>Web Development</li>
+        <li>Managing Websites</li>
+        <li>Marketing Services</li>
+      </div>
+      <div class="footer-col">
+        <h3>Guides</h3>
+        <li>How to study here</li>
+        <li>Online Safety</li>
+        <li>Online Management</li>
+        <li>Time Management</li>
+      </div>
+      <div class="footer-col">
+        <h3>Top Clents</h3>
+        <li>Private Primary Schools</li>
+        <li>Public Primary Schools</li>
+        <li>Private Junior high schools</li>
+        <li>Public Junior high schools</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us: We only send learning information.</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email Address">
+          <a href="#" class="yellow">SUBSCRIBE</a>
+
+        </div>
+
+      </div>
+      <div class="copyright">
+        <p>Copyright 2022 All rights reserved | Created by Samuel Kagunda Developer</p>
+        <div class="pro-links">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+
+      </div>
+    </footer>
+
+    <script>
+      $('#menu-btn').click(function() {
+          $('nav .Navigation ul').addClass('active')
+      });
+      $('#menu-close').click(function() {
+          $('nav .Navigation ul').removeClass('active')
+      });
+    </script>
+
+  </body>
+</html>

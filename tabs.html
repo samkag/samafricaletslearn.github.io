@@ -1,0 +1,96 @@
+<<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="reg.css">
+  <link type="text/css" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <title>Registration Page </title>
+</head>
+<body>
+<div class="hero">
+  <div class="btn-box">
+    <button id="btn1" onclick="openHTML()">HTML</button>
+    <button id="btn2" onclick="openCSS()">CSS</button>
+    <button id="btn3" onclick="openJS()">JAVASCRIPT</button>
+  </div>
+  <div id="content1" class="content">
+    <div class="content-left">
+      <h1>Learn HTML</h1>
+      <p>To enable Africa to be the best we provide <br><br>
+            computer based lessons to equip all with relevant computer skills</p>
+            <a href="">Watch Video</a>
+    </div>
+    <div class="content-right">
+      <img src="images/c1.jpg">
+    </div>
+  </div>
+
+  <div id="content2" class="content">
+    <div class="content-left">
+      <h1>Learn CSS</h1>
+      <p>To enable Africa to be the best we provide <br><br>
+            computer based lessons to equip all with relevant computer skills</p>
+            <a href="">Watch Video</a>
+    </div>
+    <div class="content-right">
+      <img src="images/c2.jpg">
+    </div>
+  </div>
+
+  <div id="content3" class="content">
+    <div class="content-left">
+      <h1>Learn JAVASCRIPT</h1>
+      <p>To enable Africa to be the best we provide <br><br>
+            computer based lessons to equip all with relevant computer skills</p>
+            <a href="">Watch Video</a>
+    </div>
+    <div class="content-right">
+      <img src="images/c3.jpg">
+    </div>
+  </div>
+
+</div>
+
+<script>
+  var content1 = document.getElementById("content1");
+  var content2 = document.getElementById("content2");
+  var content3 = document.getElementById("content3");
+  var btn1 = document.getElementById("btn1");
+  var btn2 = document.getElementById("btn2");
+  var btn3 = document.getElementById("btn3");
+
+  function openHTML(){
+    content1.style.transform = "translateX(0)";
+    content2.style.transform = "translateX(100%)";
+    content3.style.transform = "translateX(100%)";
+    btn1.style.color = "gold";
+    btn2.style.color = "black";
+    btn3.style.color = "black";
+    content1.style.transitionDelay = "0.3s";
+    content2.style.transitionDelay = "0s";
+    content3.style.transitionDelay = "0s";
+  }
+  function openCSS(){
+    content1.style.transform = "translateX(100%)";
+    content2.style.transform = "translateX(0)";
+    content3.style.transform = "translateX(100%)";
+    btn2.style.color = "gold";
+    btn1.style.color = "black";
+    btn3.style.color = "black";
+    content1.style.transitionDelay = "0s";
+    content2.style.transitionDelay = "0.3s";
+    content3.style.transitionDelay = "0s";
+  }
+  function openJS(){
+    content1.style.transform = "translateX(100%)";
+    content2.style.transform = "translateX(100%)";
+    content3.style.transform = "translateX(0)";
+    btn3.style.color = "gold";
+    btn2.style.color = "black";
+    btn1.style.color = "black";
+    content1.style.transitionDelay = "0s";
+    content2.style.transitionDelay = "0s";
+    content3.style.transitionDelay = "0.3s";
+  }
+</script>

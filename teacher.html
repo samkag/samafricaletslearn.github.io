@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tutor Log in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="split.css">
+    <link rel="stylesheet" href="https:/pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--Navigation-->
+    <nav>
+      <img src="images/newlogo.PNG" alt="">
+      <div class="Navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="active" href="contact.html">Log Out</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="">
+      </div>
+    </nav>
+
+
+    <!--Home-->
+    <div class="split-screen">
+        <div class="left teacher">
+          <section class="copy">
+            <h1 class="title">Africa Let's Learn</h1>
+            <h2>Explore your creativity</h2>
+            <p>Over a 1000 courses taught</p>
+          </section>
+        </div>
+    <div class="right">
+      <form>
+        <section class="copy">
+          <h2>Log in</h2>
+          <div class="login-container">
+            <p>Already have an account<a href=""> </a></p>
+          </div>
+        </section>
+        <div class="input-container name">
+          <label for="fname">School ID</label>
+          <input id="fname" name="fname" type="text">
+        </div>
+        <!--div class="input-container email">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email">
+        </div-->
+        <div class="input-container password">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Must be at least 6 characters">
+          <i class="far fa-eye-slash"></i>
+        </div>  
+        <div class="input-container cta">
+          <label class="checkbox-container">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Sign up for email updates
+          </label>
+        </div>
+        <button class="signup-btn" type="submit">Sign Up</button>
+        <!--section class="copy legal">
+          <p> <span class="small">By continuing you accept our terms <br> <a href="#">Privacy Policy</a> &amp; <a href="#">Terms of service</a>. </span> </p>
+        </section-->
+      </form>
+    </div>
+  </div>
+    
+    
+
+
+
+
+    <footer>
+      <div class="footer-col">
+        <h3>Africa Let's Learn</h3>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a class="active" href="about.html">About us</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
+        <li><a class="active" href="course.html">Courses</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </div>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>E-Learning</li>
+        <li>Web Development</li>
+        <li>Managing Websites</li>
+        <li>Marketing Services</li>
+      </div>
+      <div class="footer-col">
+        <h3>Guides</h3>
+        <li>How to study here</li>
+        <li>Online Safety</li>
+        <li>Online Management</li>
+        <li>Time Management</li>
+      </div>
+      <div class="footer-col">
+        <h3>Top Clents</h3>
+        <li>Private Primary Schools</li>
+        <li>Public Primary Schools</li>
+        <li>Private Junior high schools</li>
+        <li>Public Junior high schools</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us: We only send learning information.</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email Address">
+          <a href="#" class="yellow">SUBSCRIBE</a>
+
+        </div>
+
+      </div>
+      <div class="copyright">
+        <p>Copyright 2022 All rights reserved | Created by Samuel Kagunda Developer</p>
+        <div class="pro-links">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+
+      </div>
+    </footer>
+
+    <script>
+      $('#menu-btn').click(function() {
+          $('nav .Navigation ul').addClass('active')
+      });
+      $('#menu-close').click(function() {
+          $('nav .Navigation ul').removeClass('active')
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Africa Lets Learn</title>
+    <link rel="stylesheet" href="lp.css">
+    <link rel="stylesheet" href="https:/pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+
+    <!--Home-->
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#" class="logo"><img src="images/a1.PNG" alt="logo"><span class="nav-item">Dashboard</span></a></li>
+          <li><a href="index.html"><i class="fas fa-home"></i><span class="nav-item">Home</span></a></li>
+          <li><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i><span class="nav-item">Log out</span></a></li>
+        </ul>
+        <div class="categories">
+          <h2>What you will learn</h2>
+          <hr>
+          <a href="#Intro">What is a Coding</a>
+          <hr>
+          <a href="#">Animation using coding</a>
+          <hr>
+          <a href="#"> Making games using codes</a>
+          <hr>
+          <a href="#"> Creating stories using codes</a>
+          <hr>
+          <a href="#"> Sharing your codes</a>
+          <hr>
+        </div>
+      </nav>
+      <section class="main">
+        <div class="top-main">
+          <h1>Lesson Overview</h1>
+          <i class="fas fa-user-cog"></i>
+        </div>
+        <div class="main-skills">
+          <div class="card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Coding for Begginers</h3>
+            <p>Learn all the basics of coding</p>
+            <button type="button" name="button">Get started</button>
+          </div>
+          <div class="card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Coding Level Two </h3>
+            <p>Be better in your coding</p>
+            <button type="button" name="button">Get started</button>
+          </div>
+          <div class="card">
+            <i class="fas fa-code-merge"></i>
+            <h3>Coding Level Three </h3>
+            <p>Learn how to program Robots</p>
+            <button type="button" name="button">Get started</button>
+          </div>
+          <div class="card">
+            <i class="fas fa-file-code"></i>
+            <h3>Coding Level four </h3>
+            <p>Advance in Robot programming</p>
+            <button type="button" name="button">Get started</button>
+          </div>
+        </div>
+        <section class="main-course">
+          <div class="course-box">
+            <ul>
+              <li class="active">In Progress</li>
+              <li>Explore</li>
+              <li>Incoming</li>
+              <li>Finished</li>
+            </ul>
+            <div class="course">
+              <div class="box">
+                <h3>Introduction to coding</h3>
+                <p>0% - Progress</p>
+                <button type="button" name="button">Start</button>
+                
+              </div>
+              <div class="box">
+                <h3>Scratch Animations</h3>
+                <p>0% - Progress</p>
+                <button type="button" name="button">Start</button>
+                
+              </div>
+              <div class="box">
+                <h3>Scratch Games</h3>
+                <p>0% - Progress</p>
+                <button type="button" name="button">Start</button>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="grid"><h1>Introduction to Coding</h1><img src="images/defcoding.png" alt=""></div>
+        <div class="grid"><h1>Introduction to Coding</h1><img src="images/learnscratch.png" alt=""></div>
+        <div class="grid"><h1>Parts of scratch window</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/TEky6j5iyAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="grid"><h1 id="Intro">Animating Characters</h1><img src="images/firstcode.png" alt=""></div>
+        <div class="grid"><h1>Moving a character</h1><img src="images/catmove.PNG" alt=""></div>
+        <div class="grid"><h1>Video on creating simple game using Codes</h1>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1jHvXakt1qw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <button onclick="showPrev()" class="Prev-btn"><< Prev</button>
+        <button onclick="showNext()"  class="Next-btn">Next >></button>
+      </section>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+      var visibleDiv = 0;
+      function showDiv(){
+        $(".grid").hide();
+        $(".grid:eq("+ visibleDiv +")").show();
+      }
+      showDiv()
+
+      function showNext(){
+        if (visibleDiv == $(".grid").length-1) {
+          visibleDiv = 0;
+        }else{
+          visibleDiv ++;
+        }
+        showDiv();
+      }
+
+      function showPrev(){
+        if (visibleDiv == 0) {
+          visibleDiv = $(".grid").length-1
+        }else{
+          visibleDiv --;
+        }
+        showDiv();
+      }
+
+
+      $('#menu-btn').click(function() {
+          $('nav .Navigation ul').addClass('active')
+      });
+      $('#menu-close').click(function() {
+          $('nav .Navigation ul').removeClass('active')
+      });
+    </script>
+
+  </body>
+</html>
